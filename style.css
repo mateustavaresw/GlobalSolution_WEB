@@ -54,18 +54,18 @@ nav a:hover{
     gap: 60px;
     padding: 50px;
     justify-content: center;
-    background: linear-gradient(135deg, var(--verde-escuro), var(--verde --verde-principal));  
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-principal));  
 }
 .hero-texto{
     max-width: 500px;
 }
 .hero-texto h2{
-    color: var(--branco);
+    color: #1b5e20;
     font-size: 3rem;
     margin-bottom: 20px;
 }
 .hero-texto p{
-    color: var(--branco);
+    color: #333;
     line-height: 1.6;
 }
 .hero-img img{
