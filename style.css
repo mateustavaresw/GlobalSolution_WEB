@@ -32,6 +32,42 @@ nav{
     margin: auto;
     max-width: 1200px;
 }
-.logo{
+.logo h1{
     color: var(--branco);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:25px;
+}
+nav a{
+    color: var(--branco);
+    text-decoration: none;
+    transition:  0.3s;
+}
+nav a:hover{
+    color: var(--verde-claro);
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 50px;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde --verde-principal));  
+}
+.hero-texto{
+    max-width: 500px;
+}
+.hero-texto h2{
+    color: var(--branco);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-texto p{
+    color: var(--branco);
+    line-height: 1.6;
+}
+.hero-img img{
+    width: 450px;
 }
