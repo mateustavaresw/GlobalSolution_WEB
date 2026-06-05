@@ -137,3 +137,34 @@ section img{
     margin-bottom: 10px;
     color: var(--verde-escuro);
 }
+footer{
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 30px;
+}
+footer h3{
+    margin-bottom: 15px;
+}
+footer p{
+    margin: 5px;
+}
+@media (max-width: 900px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img img{
+    
+        width: 300px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    }
