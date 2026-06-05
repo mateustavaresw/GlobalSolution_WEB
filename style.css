@@ -97,3 +97,43 @@ section img{
     gap: 25px;
     flex-wrap: wrap;
 }
+.card{
+    background-color: var(--branco);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    transition: .3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card h3{
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--verde-principal);
+}
+.ods{
+    background-color: var(--branco);
+}
+.ods-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ods-card{
+    background-color: var(--cinza);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    transition: .3s;
+    border-radius: 15px;
+}
+.ods-card:hover{
+    transform: scale(1.05);
+}
+.ods-card h3{    
+    margin-bottom: 10px;
+    color: var(--verde-escuro);
+}
