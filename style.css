@@ -32,6 +32,11 @@ nav{
     margin: auto;
     max-width: 1200px;
 }
+.logo img{
+    width: 160px;
+    height: auto;
+    display: block;
+}
 .logo h1{
     color: var(--branco);
 }
