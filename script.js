@@ -35,9 +35,14 @@ function irParaSlide(n) {
     mostrarSlide(n);
     reiniciarIntervalo();
 }
-function reiniciar Intervalo() {
+function reiniciarIntervalo() {
     clearInterval(intervaloSlide);
     intervaloSlide = setInterval(() => {
         mostrarSlide(slideAtual + 1);
     }, 4000);
 }
+
+//começa o slideshow automaticamente
+intervaloSlide = setInterval(function() {
+    mostrarSlide(slideAtual + 1);
+}, 4000);
