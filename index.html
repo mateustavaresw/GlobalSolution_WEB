@@ -79,9 +79,9 @@
 
         <div class="tech-cards">
 
-            <div class="tech-card">🛰️ Satélites</div>
-            <div class="tech-card">🤖 IA</div>
-            <div class="tech-card">📊 Dados</div>
+            <div class="tech-card">Satélites</div>
+            <div class="tech-card">IA</div>
+            <div class="tech-card">Dados</div>
 
         </div>
 
@@ -95,7 +95,7 @@
     <div class="cards">
 
         <div class="card">
-            <h3>🌱 Monitoramento</h3>
+            <h3>Monitoramento</h3>
             <p>Monitorar plantações em tempo real.</p>
         </div>
 
@@ -105,12 +105,12 @@
         </div>
 
         <div class="card">
-            <h3>📈 Produtividade</h3>
+            <h3>Produtividade</h3>
             <p>Melhorar o desempenho das lavouras.</p>
         </div>
 
         <div class="card">
-            <h3>🚨 Alertas</h3>
+            <h3>Alertas</h3>
             <p>Gerar alertas preventivos para o agricultor.</p>
         </div>
 
@@ -159,6 +159,37 @@
 
 
     </section>
+
+    <!-- slideshow -->
+    <section id="slideshow">
+        <h2>Galeria do Projeto</h2>
+        <p>Veja como a tecnologia espacial se aplica na agricultura</p>
+
+        <div class="slideshow-container">
+            <div class="slide ativo">
+                <img src="img/satelitegs.png" alt="Satélite monitorando lavoura">
+                <div class="slide-legenda">Satélites da NASA e ESA capturam imagens das lavouras diariamente</div>
+            </div>
+            <div class="slide">
+                <img src="img/seca.png" alt="Área com seca detectada por satélite">
+                <div class="slide-legenda">Detecção de seca e estresse hídrico por sensoriamento remoto</div>
+            </div>
+            <div class="slide">
+                <img src="img/agricultor.png" alt="Agricultor usando o sistema">
+                <div class="slide-legenda">Agricultor recebe alertas em tempo real no celular</div>
+            </div>
+
+            <button class="slide-btn anterior" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="slide-btn proximo" onclick="mudarSlide(1)">&#10095;</button>
+
+            <div class="slide-pontos">
+                <span class="ponto ativo" onclick="irParaSlide(0)"></span>
+                <span class="ponto" onclick="irParaSlide(1)"></span>
+                <span class="ponto" onclick="irParaSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
     <!-- secao 7-->
      <section id = "ods">
         <h2>ODS Relacionados com o projeto</h2>
