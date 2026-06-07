@@ -1,10 +1,10 @@
 //função de trocar tema
-function trocarTema() {
+function trocarTema(tema) {
     document.body.className = tema;
     localStorage.setItem('tema', tema);
 }
 //carrega o tema salvo no localStorage
-let tema = localStorage.getItem('tema');
+let temaSalvo = localStorage.getItem('tema');
 if (temaSalvo) {
     document.body.className = temaSalvo;
 }
@@ -240,7 +240,7 @@ intervaloSlide = setInterval(function() {
             carregarPergunta();
         }
 
-        / inicia o quiz quando a página carrega
+        // inicia o quiz quando a página carrega
         carregarPergunta();
 
         // formulario de contato
