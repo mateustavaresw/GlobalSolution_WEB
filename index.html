@@ -207,11 +207,74 @@
                 <h3>ODS 13: Ação Contra a Mudança Global do Clima</h3>
                 <p>Ajuda agricultores a se adaptarem às mudanças climáticas.</p>
             </div>
-
         </div>
+      </section>
       
-       
-     </section>
+    <!-- quiz -->
+    <section id="quiz">
+        <h2>Quiz: Tecnologia Espacial na Agricultura</h2>
+        <p>Teste seus conhecimentos sobre satélites e agro!</p>
+
+        <div class="quiz-container">
+            <div id="quiz-area">
+                <div id="quiz-progresso">Pergunta <span id="num-pergunta">1</span> de 10</div>
+                <div id="barra-progresso">
+                    <div id="barra-fill"></div>
+                </div>
+                <div id="pergunta-texto"></div>
+                <div id="opcoes-area"></div>
+                <div id="feedback-quiz"></div>
+                <button id="btn-proxima" onclick="proximaPergunta()" style="display:none">Próxima →</button>
+            </div>
+            <div id="resultado-quiz" style="display:none">
+                <h3>Resultado Final</h3>
+                <div id="pontuacao-texto"></div>
+                <div id="mensagem-resultado"></div>
+                <button onclick="reiniciarQuiz()">Jogar Novamente</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- formulario de contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Quer saber mais sobre o AgroSpace? Manda uma mensagem!</p>
+
+        <form id="form-contato" onsubmit="return false">
+            <div class="form-grupo">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" placeholder="Seu nome completo">
+                <span class="erro" id="erro-nome"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+                <span class="erro" id="erro-email"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="tipo">Você é *</label>
+                <select id="tipo">
+                    <option value="">Selecione...</option>
+                    <option value="agricultor">Agricultor</option>
+                    <option value="cooperativa">Cooperativa</option>
+                    <option value="pesquisador">Pesquisador</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <span class="erro" id="erro-tipo"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <span class="erro" id="erro-mensagem"></span>
+            </div>
+            <button type="button" onclick="validarFormulario()">Enviar Mensagem </button>
+            <div id="sucesso-form" style="display:none">
+                ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+        </form>
+    </section>
+
      <footer>
         <h3>Equipe Agrospace</h3>
             <p> Rafael Rosatti De Paula, Rm: 571280</p>
@@ -221,6 +284,9 @@
             <p> Matheus Donas Viera, Rm: 568626</p>
 
      </footer>
+
+     <script src="script.js"></script>  
+    </script>
 </body>
 </html>
 

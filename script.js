@@ -239,3 +239,59 @@ intervaloSlide = setInterval(function() {
             document.getElementById('resultado-quiz').style.display = 'none';
             carregarPergunta();
         }
+
+        / inicia o quiz quando a página carrega
+        carregarPergunta();
+
+        // formulario de contato
+        function validarFormulario() {
+            var valido = true;
+
+            // limpa erros anteriores
+            document.getElementById('erro-nome').textContent = '';
+            document.getElementById('erro-email').textContent = '';
+            document.getElementById('erro-tipo').textContent = '';
+            document.getElementById('erro-mensagem').textContent = '';
+            document.getElementById('sucesso-form').style.display = 'none';
+
+            var nome = document.getElementById('nome').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var tipo = document.getElementById('tipo').value;
+            var mensagem = document.getElementById('mensagem').value.trim();
+
+            if (nome === '') {
+                document.getElementById('erro-nome').textContent = 'Por favor, informe seu nome.';
+                valido = false;
+            } else if (nome.length < 3) {
+                document.getElementById('erro-nome').textContent = 'Nome muito curto.';
+                valido = false;
+            }
+
+            if (email === '') {
+                document.getElementById('erro-email').textContent = 'Por favor, informe seu e-mail.';
+                valido = false;
+            } else if (!email.includes('@') || !email.includes('.')) {
+                document.getElementById('erro-email').textContent = 'E-mail inválido.';
+                valido = false;
+            }
+
+            if (tipo === '') {
+                document.getElementById('erro-tipo').textContent = 'Selecione uma opção.';
+                valido = false;
+            }
+
+            if (mensagem === '') {
+                document.getElementById('erro-mensagem').textContent = 'Por favor, escreva uma mensagem.';
+                valido = false;
+            } else if (mensagem.length < 10) {
+                document.getElementById('erro-mensagem').textContent = 'Mensagem muito curta. Escreva pelo menos 10 caracteres.';
+                valido = false;
+            }
+
+            if (valido) {
+                document.getElementById('form-contato').reset();
+                document.getElementById('sucesso-form').style.display = 'block';
+            }
+
+            return false;
+        }
