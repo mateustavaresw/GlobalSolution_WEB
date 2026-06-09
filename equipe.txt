@@ -9,4 +9,4 @@ Matheus Donas Vieira         - RM 568626
 Rafael Rosatti de Paula      - RM 571280
 
 Repositorio GitHub (Web Development):
-https://github.com/matheusdonasv/GlobalSolution_WEB
+https://github.com/mateustavaresw/GlobalSolution_WEB.git
