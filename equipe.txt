@@ -1,0 +1,12 @@
+Equipe AgroSpace - Global Solution 2026
+Engenharia de Software - 1o Ano - FIAP
+
+Integrantes:
+Enzo Cassiano Machado        - RM 569630
+Jose Henrique Oliveira de Lira - RM 569037
+Mateus Rodrigues Tavares     - RM 571189
+Matheus Donas Vieira         - RM 568626
+Rafael Rosatti de Paula      - RM 571280
+
+Repositorio GitHub (Web Development):
+https://github.com/matheusdonasv/GlobalSolution_WEB
